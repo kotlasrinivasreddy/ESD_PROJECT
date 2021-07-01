@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel = "stylesheet" href="css/style.css">
+    <title>Hello, world!</title>
+</head>
+
+<body>
+<div class="container">
+    <header class="blog-header py-5">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+            <div class="text-center">
+                <a class="blog-header-logo text-dark" href="#">Welcome Student</a>
+            </div>
+        </div>
+    </header>
+    <form name="form" id="display_user_courses" class="form-inline">
+        <div class="form-group">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <select id="Select User Course Specialization"  onfocus="populate_user_specialization_dropdown_by_query()">
+                            <option value="select User Course Specialization">Select Specialization</option>
+                        </select>
+                    </div>
+                    <div class="col-sm">
+                        <select id="Select Course">
+                            <option value="select Course">Select Course</option>
+                        </select>
+                    </div>
+                    <div class="col-sm">
+                        <select id="Select Ordering">
+                            <option value="select ordering">Select Ordering</option>
+                            <option value="ascending">Ascending</option>
+                            <option value="descending">Descending</option>
+                        </select>
+                    </div>
+                </div>
+                <div style="text-align: center">
+                    <button class="btn btn-lg btn-primary btn-block" style="margin-top: 5%;margin-bottom:2%;text-align: center" type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div class="org-class" id="org-div-id">
+        <table class="org-table" id="student-table-id"></table>
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</body>
+<script src="js/dynamically_populate.js"></script>
+<script src="js/get_courses_dropdown.js"></script>
+<script src="js/submit_get_students.js"></script>
+</html>

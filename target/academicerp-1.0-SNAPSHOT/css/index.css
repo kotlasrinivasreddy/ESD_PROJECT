@@ -1,0 +1,14 @@
+.card-img-top{
+    width: 270px; /* You can set the dimensions to whatever you want */
+    height: 270px;
+    object-fit: cover;
+}
+
+.card-title{
+    text-align: center;
+}
+.row{
+    margin-top: 150px;
+    text-align: center;
+    margin-left: 340px;
+}
